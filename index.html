@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizii</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <div id="home" class="home-container">
+  <h1 class="home-title">My Courses</h1>
+
+  <button class="course-btn" onclick="showLessons()">
+    HTML Course
+  </button>
+</div>
+
+<div id="lessons" class="lesson-container" style="display:none;">
+  <h2 class="lesson-title">HTML Lessons</h2>
+
+  <div class="lesson-buttons">
+    <button class="lesson-btn" onclick="startQuiz('lesson1')">
+      HTML Lesson 1
+    </button>
+
+    <button class="lesson-btn" onclick="startQuiz('lesson2')">
+      HTML Lesson 2
+    </button>
+  </div>
+
+  <button class="back-btn" onclick="goHome()">Back</button>
+</div>
+
+
+<div id="quiz" style="display:none;">
+  <div class="main">
+    <div id="box"></div>
+  </div>
+</div>
+
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
